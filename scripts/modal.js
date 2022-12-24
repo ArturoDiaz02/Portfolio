@@ -3,10 +3,10 @@ $(document).ready(function(){
   // MODAL
   var modalText = {
     roambi: {
-      title: 'Roambi.com',
-      tag: 'BUSINESS ANALYTICS.',
-      detail: 'Roambi provides analytics, reporting, and business intelligence for companies to use on the go. A Wordpress hosted site written in PHP and Javascript with Hubspot Integration.',
-      link: 'http://www.roambi.com'
+      title: 'Pokedex',
+      tag: 'ENTERTAINMENT AND STATISTICS.',
+      detail: 'This application consumes an external Api provided by the PokeApi page, for the development of the application the MVVM architecture, Jetpack Compose for the views, Reprofit, Coil, Dagger - Hilt and Palette were used.',
+      link: 'https://github.com/ArturoDiaz02/Pokedex-JetpackCompose'
     },
     walker: {
       title: 'WalkerTracker',
