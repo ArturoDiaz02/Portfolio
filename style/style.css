@@ -123,6 +123,22 @@ body {
   .button .mdi {
     vertical-align: middle; }
 
+    
+.button-cv {
+  padding: 10px 20px;
+  border: 2px solid #04C2C9;
+  box-sizing: inherit;
+  display: inline-block;
+  font-size: 13pt;
+  transition: all .5s;
+  cursor: pointer; }
+  .button-cv:hover {
+      background-color: #04C2C9;
+      border-color: #04C2C9;
+      color: #fff; }
+  .button-cv .mdi {
+      vertical-align: middle; }
+
 .bold {
   font-family: 'Raleway-bold'; }
 
