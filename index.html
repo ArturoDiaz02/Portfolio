@@ -19,9 +19,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 
   <!-- LOCAL -->
+  <script src="scripts/showData.js"></script>
   <script src="scripts/pt.min.js"></script>
   <script src="scripts/index.js"></script>
   <script src="scripts/modal.js"></script>
+  
 
 </head>
 <body>
@@ -86,57 +88,8 @@
       <div class="header waypoint" data-animation="slide-in-left">ABOUT</div>
       <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
 
-      <div class="flex row label-wrap">
-        <div class="flex row-gt-sm">
-        <div class="flex bullet-wrap ">
-          <div class="hex-wrap waypoint" data-animation="flip-in-x">
-            <div class="hexagon">
-              <i class="mdi mdi-speedometer"></i>
-            </div>
-          </div>
-          <div class="waypoint" data-animation="fade-in">
-            <div class="label bold">Fast</div>
-            <div>Efficient and quality work, applying the best practices.</div>
-          </div>
-        </div>
-
-        <div class="flex bullet-wrap " >
-          <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
-            <div class="hexagon">
-              <i class="mdi mdi-sync"></i>
-            </div>
-          </div>
-          <div class="waypoint" data-animation="fade-in" data-delay=".2s">
-            <div class="label bold">Agile</div>
-            <div>Focused on scrum agility and teamwork.</div>
-          </div>
-        </div>
-        </div>
-        <div class="flex row-gt-sm">
-          <div class="flex bullet-wrap " >
-            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
-              <div class="hexagon">
-                <i class="mdi mdi-lightbulb-outline"></i>
-              </div>
-            </div>
-            <div class="waypoint" data-animation="fade-in" data-delay=".4s">
-              <div class="label bold">Intuitive</div>
-              <div>Strong preference for clean, easy-to-read code.</div>
-            </div>
-          </div>
-
-          <div class="flex bullet-wrap " >
-            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
-              <div class="hexagon">
-                <i class="mdi mdi-domain"></i>
-              </div>
-            </div>
-            <div class="waypoint" data-animation="fade-in" data-delay=".6s">
-              <div class="label bold">Architect</div>
-              <div>Lover of clean architecture and design patterns.</div>
-            </div>
-          </div>
-        </div>
+      <div class="flex row label-wrap" id="grip-about">
+        <div class="flex row-gt-sm" id="about0"></div>
       </div>
 
       <div class="skills-wrapper flex row-gt-sm">
@@ -154,81 +107,8 @@
           </div>
         </div>
 
-        <div class="flex flex-50-gt-sm waypoint bars-wrap"  data-animation="slide-in-right">
-          <div class="bar flex">
-            <div class="bar fill" style="width:85%">
-              <div class="tag bold flex">Java</div>
-            </div>
-            <span>85%</span>
-          </div> 
-
-          <div class="bar flex">
-            <div class="bar fill" style="width:50%">
-              <div class="tag bold flex">Spring boot</div>
-            </div>
-            <span>50%</span>
-          </div>
-
-
-          <div class="bar flex">
-    
-            <div class="bar fill" style="width:70%">
-              <div class="tag bold flex">SQL/Postgres</div>
-            </div>
-            <span>70%</span>
-          </div>
-
-          <div class="bar flex">
-            <div class="bar fill" style="width:60%">
-              <div class="tag bold flex">JavaScript</div>
-            </div>
-            <span>60%</span>
-          </div>
-
-          <div class="bar flex">
-            <div class="bar fill" style="width:75%">
-              <div class="tag bold flex">Firebase</div>
-            </div>
-            <span>75%</span>
-          </div>
-
-          <div class="bar flex">
-            <div class="bar fill" style="width:55%">
-              <div class="tag bold flex">Node.js/React</div>
-            </div>
-            <span>55%</span>
-          </div>
-
-
-          <div class="bar flex">
-            <div class="bar fill" style="width:30%">
-              <div class="tag bold flex">Flutter</div>
-            </div>
-            <span>30%</span>
-          </div>
-
-          <div class="bar flex">
-            <div class="bar fill" style="width:70%">
-              <div class="tag bold flex">Kotil/Android</div>
-            </div>
-            <span>70%</span>
-          </div>
-
-          <div class="bar flex">
-            <div class="bar fill" style="width:30%">
-              <div class="tag bold flex">Python</div>
-            </div>
-            <span>30%</span>
-          </div>
-
-          <div class="bar flex">
-            <div class="bar fill" style="width:40%">
-              <div class="tag bold flex">Junit</div>
-            </div>
-            <span>40%</span>
-          </div>
-
-        </div>
+        <div class="flex flex-50-gt-sm waypoint bars-wrap"  data-animation="slide-in-right" id="skills" />
+         
       </div>
     </div>
   </section>
@@ -256,18 +136,7 @@
       </div>
     </div>
 
-    <div id="gallery" class="container flex row wrap waypoint">
-      <div class="mix mobil" data-my-order="1">
-        <div>
-          <div class="card"></div>
-          <div class="text">
-            <div class="bold">Pokedex</div>
-            <span class="highlight">Pure Kotlin</span>
-          </div>
-          <div class="button" id="roambi">LEARN MORE</div>
-        </div>
-      </div>
-    </div>
+    <div id="gallery" class="container flex row wrap waypoint" />
   </section>
 
 <!-- BLOG -->
@@ -278,42 +147,8 @@
       <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
 
       <div class="flex row wrap">
-        <div class="flex row-gt-sm">
-          <a href="https://www.icesi.edu.co/es/" target="_blank">
-            <div class="blog-wrap waypoint" data-animation="fade-in">
-              <div class="thumb" id="thumb-1"></div>
-              <div class="label bold">Icesi university</div>
-              <div class="date">FEBRUARY 01, 2020</div>
-              <div class="bar"></div>
-              <div class="text">
-                Software system engineer student at the number one university in Colombia.
-              </div>
-            </div>
-          </a>
-          <a href="https://www.perficient.com/" target="_blank">
-            <div class="blog-wrap waypoint" data-animation="fade-in" data-delay=".2s">
-              <div class="thumb" id="thumb-2"></div>
-              <div class="label bold">Tech Camp, focused on Java, DevOps, Frontend, Backend y QA.</div>
-              <div class="date">DECEMBER 21, 2022</div>
-              <div class="bar"></div>
-              <div class="text">
-                Perficient, Inc. is a global digital consultancy. The company's efforts include enterprise mobile applications, creative services, marketing, digital strategy Internet of Things, information technology, management consulting, custom development, and platform implementations.
-              </div>
-            </div>
-          </a>
-    
-          <a href="https://certiprof.com/" target="_blank">
-            <div class="blog-wrap waypoint" data-animation="fade-in" data-delay=".4s">
-              <div class="thumb" id="thumb-3"></div>
-              <div class="label bold">CertiProf - Scrum Foundation Professional Certificate SFPC</div>
-              <div class="date">AUGUST 20, 2022</div>
-              <div class="bar"></div>
-              <div class="text">
-                The Scrum Foundation exam is part of the CertiProf certification program which has been developed in cooperation with international experts in the field. After passing the Scrum Foundation Professional exam, you will have gained an overview and basic understanding of Scrum.
-              </div>
-            </div>
-          </a>
-        </div>
+        <div class="flex row-gt-sm" id="education" />
+
       </div>
     </div>
   </section>
