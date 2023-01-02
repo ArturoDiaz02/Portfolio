@@ -50,7 +50,7 @@ $(document).ready(function(){
         },
         {
             language: "Node.js/React",
-            level: "55%"
+            level: "60%"
         },
         {
             language: "Flutter",
