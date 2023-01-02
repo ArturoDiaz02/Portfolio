@@ -2,37 +2,59 @@ $(document).ready(function(){
 
   // MODAL
   var modalText = {
-    roambi: {
+    poke: {
       title: 'Pokedex',
       tag: 'ENTERTAINMENT AND STATISTICS.',
       detail: 'This application consumes an external Api provided by the PokeApi page, for the development of the application the MVVM architecture, Jetpack Compose for the views, Reprofit, Coil, Dagger - Hilt and Palette were used.',
       link: 'https://github.com/ArturoDiaz02/Pokedex-JetpackCompose'
     },
-    walker: {
-      title: 'WalkerTracker',
-      tag: 'PERFORMANCE METRICS.',
-      detail: 'Walker Tracker offers goal management, fitness tracking, and team competitions to companies for internal use. A Ruby on Rails and Javascript companion site for the Walker Tracker App. Features visual metrics and gamified progression system.',
+    portfolio: {
+      title: 'Portfolio',
+      tag: 'PERSONAL PAGE',
+      detail: 'Web page created with js, html and css this page fulfills the purpose of personal portfolio',
+      link: 'https://arturodiaz02.github.io/Portfolio/'
     },
-    powur: {
-      title: 'Powur.com',
-      tag: 'MULTI-LEVEL MARKETING.',
-      detail: 'Powur is a multi-level marketing platform for lead generation, recruitment, and team building. Built with Ruby on Rails and Angular-UI. Makes use of Angular-material for front-end visuals. Features complex user tree heiarchy and commission system.',
-      link: 'http://www.powur.com/with/42'
+    perficient: {
+      title: 'Perficient Bootcamp',
+      tag: 'SQL RULE PAGE',
+      detail: 'Web page has the purpose of creating sql rules, this page is created with typescript using react for the frontend and with kotlin and java for the backend.',
+      link: 'https://github.com/PerficientBootcampStudents'
     },
-    mystand: {
-      title: 'MyStand',
-      tag: 'CROWD-FUNDED CHARITY.',
-      detail: 'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
+    space: {
+      title: 'Space invader',
+      tag: 'DESKTOP GAME',
+      detail: 'Clone of the famous space invaders game made in java using javafx tools.',
+      link: 'https://github.com/ArturoDiaz02/Space_Invaders'
     },
-    never: {
-      title: 'NeverSurrender',
-      tag: 'ALS AWARENESS.',
-      detail: 'NeverSurrender is a platform for the new ALS foundation mobile app in hopes to raise awareness and research funding to fight ALS. Pure JavaScript marketing site to promote the new ALS NeverSurrender app.',
+    mine: {
+      title: 'Minecraft Clone',
+      tag: 'WEB GAME',
+      detail: 'Clone of the famous minecraft game using react together with the tree.js library.',
+      link: 'https://github.com/ArturoDiaz02/Minecraft-Clone'
     },
-    themall: {
-      title: 'The Mall',
-      tag: 'PEER GUIDED SHOPPING.',
-      detail: 'The Mall is a place to follow the latest fashion purchases of your friends and favorite celebrities. Built with Node.js and Handlebars. Features the ability to import thousands of top brands products into one shopping site.',
+    emprendi: {
+      title: 'EmprendIcesi',
+      tag: 'ECOMMERCE PAGE',
+      detail: 'This website has the purpose of connecting entrepreneurs from the icesi university with potential clients, facilitating communication and thus sales. This page was made with node.js.',
+      link: 'https://github.com/danielaolartebo/IS-emprendicesi'
+    },
+    estruc: {
+      title: 'Estructopoly',
+      tag: 'DESKTOP GAME',
+      detail: 'Clone of the famous monopoly game created using Java and the resources provided by javafx.',
+      link: 'https://github.com/cuatrosr/Estructopoly'
+    },
+    note: {
+      title: 'NoteApp',
+      tag: 'UTILITY',
+      detail: 'Mobile application to make personal notes: -> architecture: MVVM and clean architecture, -> views: Jetpack Compose, -> extras: Dagger - Hilt, Use Case and Room',
+      link: 'https://github.com/ArturoDiaz02/NoteApp-JetpackCompose'
+    },
+    sip: {
+      title: 'SIP',
+      tag: 'INSURANCE APP',
+      detail: 'Mobile application for insurance management, this application was built using XML views, SQLITE in addition to the services offered by Firebase such as firestore, storage, remote config and auth',
+      link: 'https://github.com/ArturoDiaz02/Smart-Insurance'
     }
   };
 
@@ -49,60 +71,14 @@ $(document).ready(function(){
     $('.modal-wrap, #modal .button').removeClass('visible');
   });
 
-  var carousel = $('#carousel'),
-      slideWidth = 700,
-      threshold = slideWidth/3,
-      dragStart, 
-      dragEnd;
-
+  var slideWidth = 700 
   setDimensions();
-
-  $('#next').click(function(){ shiftSlide(-1) })
-  $('#prev').click(function(){ shiftSlide(1) })
-
-  carousel.on('mousedown', function(){
-    if (carousel.hasClass('transition')) return;
-    dragStart = event.pageX;
-    $(this).on('mousemove', function(){
-      dragEnd = event.pageX;
-      $(this).css('transform','translateX('+ dragPos() +'px)');
-    });
-    $(document).on('mouseup', function(){
-      if (dragPos() > threshold) { return shiftSlide(1) }
-      if (dragPos() < -threshold) { return shiftSlide(-1) }
-      shiftSlide(0);
-    });
-  });
 
   function setDimensions() {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
      slideWidth = $(window).innerWidth();
     }
-    $('.carousel-wrap, .slide').css('width', slideWidth);
     $('.modal').css('max-width', slideWidth);
-    $('#carousel').css('left', slideWidth * -1)
-  }
-
-  function dragPos() {
-    return dragEnd - dragStart;
-  }
-
-  function shiftSlide(direction) {
-    if (carousel.hasClass('transition')) return;
-    dragEnd = dragStart;
-    $(document).off('mouseup')
-    carousel.off('mousemove')
-            .addClass('transition')
-            .css('transform','translateX(' + (direction * slideWidth) + 'px)'); 
-    setTimeout(function(){
-      if (direction === 1) {
-        $('.slide:first').before($('.slide:last'));
-      } else if (direction === -1) {
-        $('.slide:last').after($('.slide:first'));
-      }
-      carousel.removeClass('transition')
-      carousel.css('transform','translateX(0px)'); 
-    },700)
   }
 
   function fillModal(id) {
@@ -116,12 +92,6 @@ $(document).ready(function(){
     $.each($('#modal li'), function(index, value ) {
       $(this).text(modalText[id].bullets[index]);
     });
-    $.each($('#modal .slide'), function(index, value) {
-      $(this).css({
-        background: "url('img/slides/" + id + '-' + index + ".jpg') center center/cover",
-        backgroundSize: 'cover'
-      });
-              
-    });
+   
   }
 })

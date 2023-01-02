@@ -249,20 +249,11 @@ nav {
   nav .active {
     color: #E31B6D; }
 
-.carousel-wrap {
-  position: relative;
-  height: 250px;
-  margin: 0 auto; }
 
 .window {
   overflow: hidden;
   position: relative;
   background: #222; }
-
-#carousel {
-  width: 10000px;
-  position: relative;
-  top: 0; }
 
 .slide {
   height: 250px;
@@ -372,8 +363,6 @@ nav {
     .modal-wrap .button:hover {
       color: #E31B6D;
       background: #fff; }
-  .modal-wrap .carousel {
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25); }
   .modal-wrap.visible {
     pointer-events: initial; }
     .modal-wrap.visible .modal {
@@ -572,29 +561,23 @@ section {
           background: #E31B6D;
           color: #fff; }
         section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
-          background: url("../img/pokeapi.png") center center/cover; }
+          background: url("../img/projects/pokeapi.png") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
-          background: url("../img/thumb-2.jpg") center center/cover; }
+          background: url("../img/projects/portfolio.JPG") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
-          background: url("../img/thumb-3.jpg") center center/cover; }
+          background: url("../img/projects/perficient.jpg") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
-          background: url("../img/thumb-4.jpg") center center/cover; }
+          background: url("../img/projects/spaceInvaders.JPG") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
-          background: url("../img/thumb-5.jpg") center center/cover; }
+          background: url("../img/projects/minecraft.JPG") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
-          background: url("../img/thumb-6.jpg") center center/cover; }
+          background: url("../img/projects/emprendicesi.JPG") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
-          background: url("../img/thumb-7.jpg") center center/cover; }
+          background: url("../img/projects/estructopoly.JPG") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
-          background: url("../img/thumb-8.jpg") center center/cover; }
+          background: url("../img/projects/noteapp.JPG") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(9) .card {
-          background: url("../img/thumb-9.jpg") center center/cover; }
-        section:nth-of-type(3) #gallery .mix:nth-child(10) .card {
-          background: url("../img/thumb-10.jpg") center center/cover; }
-        section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
-          background: url("../img/thumb-11.jpg") center center/cover; }
-        section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
-          background: url("../img/thumb-12.jpg") center center/cover; }
+          background: url("../img/projects/sip.JPG") center center/cover; }
         section:nth-of-type(3) #gallery .mix .card {
           height: 240px;
           max-width: 100%;
@@ -805,9 +788,6 @@ footer {
   .hex-wrap {
     height: 100px;
     width: 100px; }
-
-  .slide, .carousel-wrap {
-    height: 450px; }
 
   .mdi-chevron-left, .mdi-chevron-right {
     font-size: 25pt !important; }

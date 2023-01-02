@@ -74,7 +74,55 @@ $(document).ready(function(){
         {
             name: "Pokedex",
             subTitle: "Pure Kotlin",
-            id: "roambi",
+            id: "poke",
+            class: "mix mobil"
+        },
+        {
+            name: "Portfolio",
+            subTitle: "Javascript, HTML and CSS",
+            id: "portfolio",
+            class: "mix web"
+        },
+        {
+            name: "Perficient Bootcamp",
+            subTitle: "React, Kotlin and Java",
+            id: "perficient",
+            class: "mix web"
+        },
+        {
+            name: "Space Invaders",
+            subTitle: "Pure Java",
+            id: "space",
+            class: "mix destop"
+        },
+        {
+            name: "Minecraft Clone",
+            subTitle: "Pure React",
+            id: "mine",
+            class: "mix web"
+        },
+        {
+            name: "EmprediIcesi",
+            subTitle: "Pure Node.js",
+            id: "emprendi",
+            class: "mix web"
+        },
+        {
+            name: "Estructopoly",
+            subTitle: "Pure Java",
+            id: "estruc",
+            class: "mix destop"
+        },
+        {
+            name: "NoteApp",
+            subTitle: "Pure Kotlin",
+            id: "note",
+            class: "mix mobil"
+        },
+        {
+            name: "SIP",
+            subTitle: "Pure Kotlin",
+            id: "sip",
             class: "mix mobil"
         }
     ]
