@@ -30,19 +30,19 @@ $(document).ready(function(){
     const itemSkills = [
         {
             language: "Java",
-            level: "85%"
+            level: "87%"
         },
         {
             language: "Spring boot",
-            level: "50%"
+            level: "75%"
         },
         {
             language: "SQL/Postgres",
-            level: "70%"
+            level: "75%"
         },
         {
             language: "Javascript",
-            level: "60%"
+            level: "65%"
         },
         {
             language: "Firebase",
@@ -50,7 +50,7 @@ $(document).ready(function(){
         },
         {
             language: "Node.js/React",
-            level: "60%"
+            level: "70%"
         },
         {
             language: "Flutter",
@@ -58,7 +58,7 @@ $(document).ready(function(){
         },
         {   
             language: "Kotil/Android",
-            level: "70%"
+            level: "75%"
         },
         {
             language: "Python",
@@ -66,7 +66,7 @@ $(document).ready(function(){
         },
         {
             language: "Junit",
-            level: "40%"
+            level: "68%"
         }
     ]
 
