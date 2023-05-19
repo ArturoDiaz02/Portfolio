@@ -55,6 +55,24 @@ $(document).ready(function(){
       tag: 'INSURANCE APP',
       detail: 'Mobile application for insurance management, this application was built using XML views, SQLITE in addition to the services offered by Firebase such as firestore, storage, remote config and auth',
       link: 'https://github.com/ArturoDiaz02/Smart-Insurance'
+    },
+    flework: {
+      title: 'Flework',
+      tag: 'SEARCH WORK',
+      detail: 'This site offers the opportunity for employers to look for workers and for unemployed people to look for work, this project is in production and was supported by the Gobernacion de Cundinamarca, Colombia.',
+      link: 'https://app.flework.com/'
+    },
+    whatsapp: {
+      title: 'Whatsapp Cloud Api',
+      tag: 'MESSENGER API',
+      detail: 'This api offers messaging and chat bot services using Meta\'s whatsapp cloud api, for the moment I can\'t show the code due to confidentiality issues.',
+      link: ''
+    },
+    citophone: {
+      title: 'Citophone Web API',
+      tag: 'MESSENGER API',
+      detail: 'This api offers services to the recidencial units to facilitate the issue of cytophonies or notification to the recidencials through the API, the code cannot be shown due to confidentiality issues.',
+      link: '',
     }
   };
 

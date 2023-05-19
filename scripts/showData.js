@@ -78,16 +78,34 @@ $(document).ready(function(){
             class: "mix mobil"
         },
         {
+            name: "Flework",
+            subTitle: "React and Express.js",
+            id: "flework",
+            class: "mix front back"
+        },
+        {
+            name: "Whatsapp Cloud Api",
+            subTitle: "Spring boot",
+            id: "whatsapp",
+            class: "mix back"
+        },
+        {
+            name: "Citophone Web API",
+            subTitle: "Spring boot",
+            id: "citophone",
+            class: "mix back"
+        },
+        {
             name: "Portfolio",
             subTitle: "Javascript, HTML and CSS",
             id: "portfolio",
-            class: "mix web"
+            class: "mix front"
         },
         {
             name: "Perficient Bootcamp",
             subTitle: "React, Kotlin and Java",
             id: "perficient",
-            class: "mix web"
+            class: "mix front back"
         },
         {
             name: "Space Invaders",
@@ -99,13 +117,13 @@ $(document).ready(function(){
             name: "Minecraft Clone",
             subTitle: "Pure React",
             id: "mine",
-            class: "mix web"
+            class: "mix front"
         },
         {
             name: "EmprediIcesi",
             subTitle: "Pure Node.js",
             id: "emprendi",
-            class: "mix web"
+            class: "mix front"
         },
         {
             name: "Estructopoly",

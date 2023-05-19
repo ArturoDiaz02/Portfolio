@@ -563,20 +563,26 @@ section {
         section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
           background: url("../img/projects/pokeapi.png") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
-          background: url("../img/projects/portfolio.JPG") center center/cover; }
+          background: url("../img/projects/flework.JPG") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
-          background: url("../img/projects/perficient.jpg") center center/cover; }
+          background: url("../img/projects/whatsappApi.JPG") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
-          background: url("../img/projects/spaceInvaders.JPG") center center/cover; }
+          background: url("../img/projects/citophone.jpg") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
-          background: url("../img/projects/minecraft.JPG") center center/cover; }
+          background: url("../img/projects/portfolio.JPG") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
-          background: url("../img/projects/emprendicesi.JPG") center center/cover; }
+          background: url("../img/projects/perficient.jpg") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
-          background: url("../img/projects/estructopoly.JPG") center center/cover; }
+          background: url("../img/projects/spaceInvaders.JPG") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
-          background: url("../img/projects/noteapp.JPG") center center/cover; }
+          background: url("../img/projects/minecraft.JPG") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(9) .card {
+          background: url("../img/projects/emprendicesi.JPG") center center/cover; }
+        section:nth-of-type(3) #gallery .mix:nth-child(10) .card {
+          background: url("../img/projects/estructopoly.JPG") center center/cover; }
+        section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
+          background: url("../img/projects/noteapp.JPG") center center/cover; }
+        section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
           background: url("../img/projects/sip.JPG") center center/cover; }
         section:nth-of-type(3) #gallery .mix .card {
           height: 240px;
@@ -617,8 +623,8 @@ section {
         background: url("../img/blog-2.jpg") center center/cover; }
       section:nth-of-type(4) .blog-wrap #thumb-3 {
         background: url("../img/blog-3.jpg") center center/cover; }
-      section:nth-of-type(4) .blog-wrap #thumb-4 {
-        background: url("../img/blog-4.jpg") center center/cover; }
+      /*section:nth-of-type(4) .blog-wrap #thumb-4 {*/
+      /*  background: url("../img/blog-4.jpg") center center/cover; }*/
       section:nth-of-type(4) .blog-wrap.fade {
         opacity: 0.4; }
       section:nth-of-type(4) .blog-wrap.hover .label {
@@ -951,7 +957,7 @@ footer {
   section:nth-of-type(2) .bullet-wrap {
     margin: 0;
     padding: 0 10px;
-    height: intial; }
+    height: initial; }
   section:nth-of-type(3) #gallery .mix .card {
     width: 390px; }
   section:nth-of-type(3) .filter {
